@@ -1,0 +1,71 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+*{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+    
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(96, 122, 240);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Shantell Sans', cursive;
+}
+.todo{
+    min-height: 500px; width: 600px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 20px grey;
+}
+#input{
+    font-family: 'Shantell Sans', cursive;
+    width: 100%;
+    font-size: 1.5rem;
+    outline: none;
+    border: 0;
+    padding: 10px;
+    background-color: rgba(240, 255, 255, 0);
+    z-index: 1;
+}
+.item{
+    margin-top: 20px;
+    border: 1px solid white;
+}
+.item li{
+    position: relative;
+    list-style: none;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 7px;
+}
+#btn{
+    font-family: 'Shantell Sans', cursive;
+    position: absolute;
+    right: 10px;
+    font-size: 1rem;
+    color: red;
+    border: 0;
+    background-color: rgba(127, 255, 212, 0.021);
+    cursor: pointer;
+}
+.done{
+    text-decoration: line-through;
+    background-color: rgba(0, 0, 0, 0.397) !important;
+    color: black !important;
+}
+
+@media only screen and (max-width:600px){
+    .todo{
+        width: 97%;
+    }
+}
+@media only screen and (max-height:500px){
+    .todo{
+        min-height: 97%;
+    }
+}
